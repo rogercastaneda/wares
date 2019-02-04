@@ -1,0 +1,41 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "webpack --mode development --watch true --host 0.0.0.0  --display-error-details",
+    "build": "./node_modules/.bin/electron-rebuild"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "aws-amplify": "^1.1.19",
+    "aws-amplify-react": "^2.3.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "electron-rebuild": "^1.8.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "sharp": "^0.21.3",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
