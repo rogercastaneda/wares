@@ -1,10 +1,10 @@
 // const webpack = require('webpack')
-
+// https://jlongster.com/Backend-Apps-with-Webpack--Part-I#p28
 var fs = require('fs');
 var nodeModules = {};
 fs.readdirSync('node_modules')
   .filter(function(x) {
-    return ['.bin'].indexOf(x) === -1;
+    return ['sharp'].indexOf(x) !== -1;
   })
   .forEach(function(mod) {
     nodeModules[mod] = 'commonjs ' + mod;
@@ -42,5 +42,5 @@ module.exports = {
       },
     ]
   },
-  // externals: nodeModules,
+  externals: nodeModules,
 }
