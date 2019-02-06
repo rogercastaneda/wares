@@ -24,7 +24,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  "target": "node",
+  // "target": "node", // not working with aws-amplify and giving error of buffer
   module: {
     rules: [
       {
